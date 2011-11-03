@@ -1,3 +1,9 @@
+# revision 22612
+# category Package
+# catalog-ctan /info/amslatex/primer
+# catalog-date 2011-05-25 00:58:45 +0200
+# catalog-license lppl
+# catalog-version 2.2
 Name:		texlive-amslatex-primer
 Version:	2.2
 Release:	1
@@ -31,6 +37,7 @@ how to use amsrefs to create a bibliography.
 %doc %{_texmfdistdir}/doc/latex/amslatex-primer/amshelp.pdf
 %doc %{_texmfdistdir}/doc/latex/amslatex-primer/amshelp.tex
 %doc %{_texmfdistdir}/doc/latex/amslatex-primer/template.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -41,3 +48,5 @@ how to use amsrefs to create a bibliography.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
