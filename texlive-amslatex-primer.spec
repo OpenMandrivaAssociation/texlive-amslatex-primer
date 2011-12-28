@@ -16,8 +16,6 @@ Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/amslatex-primer.d
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
-Conflicts:	texlive-texmf <= 20110705-3
-Conflicts:	texlive-doc <= 20110705-3
 
 %description
 The document aims to get you up and running with AMS-LaTeX as
@@ -37,7 +35,6 @@ how to use amsrefs to create a bibliography.
 %doc %{_texmfdistdir}/doc/latex/amslatex-primer/amshelp.pdf
 %doc %{_texmfdistdir}/doc/latex/amslatex-primer/amshelp.tex
 %doc %{_texmfdistdir}/doc/latex/amslatex-primer/template.tex
-%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -48,5 +45,3 @@ how to use amsrefs to create a bibliography.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
-mkdir -p %{buildroot}%{_tlpkgobjdir}
-cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
