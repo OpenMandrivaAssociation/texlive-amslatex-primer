@@ -45,3 +45,17 @@ how to use amsrefs to create a bibliography.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Tue Jan 03 2012 Paulo Andrade <pcpa@mandriva.com.br> 2.2-2
++ Revision: 749193
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 2.2-1
++ Revision: 717822
+- texlive-amslatex-primer
+- texlive-amslatex-primer
+- texlive-amslatex-primer
+- texlive-amslatex-primer
+
