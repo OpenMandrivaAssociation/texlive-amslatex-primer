@@ -1,12 +1,12 @@
-# revision 22612
+# revision 28980
 # category Package
 # catalog-ctan /info/amslatex/primer
-# catalog-date 2011-05-25 00:58:45 +0200
+# catalog-date 2013-01-29 00:01:00 +0100
 # catalog-license lppl
-# catalog-version 2.2
+# catalog-version 2.3
 Name:		texlive-amslatex-primer
-Version:	2.2
-Release:	2
+Version:	2.3
+Release:	1
 Summary:	Getting up and running with AMS-LaTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/info/amslatex/primer
@@ -45,17 +45,3 @@ how to use amsrefs to create a bibliography.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Tue Jan 03 2012 Paulo Andrade <pcpa@mandriva.com.br> 2.2-2
-+ Revision: 749193
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 2.2-1
-+ Revision: 717822
-- texlive-amslatex-primer
-- texlive-amslatex-primer
-- texlive-amslatex-primer
-- texlive-amslatex-primer
-
