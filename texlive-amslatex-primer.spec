@@ -6,7 +6,7 @@
 # catalog-version 2.3
 Name:		texlive-amslatex-primer
 Version:	2.3
-Release:	9
+Release:	10
 Summary:	Getting up and running with AMS-LaTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/info/amslatex/primer
