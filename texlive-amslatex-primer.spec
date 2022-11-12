@@ -1,18 +1,12 @@
-# revision 28980
-# category Package
-# catalog-ctan /info/amslatex/primer
-# catalog-date 2013-01-29 00:01:00 +0100
-# catalog-license lppl
-# catalog-version 2.3
 Name:		texlive-amslatex-primer
-Version:	2.3
-Release:	10
+Version:	28980
+Release:	1
 Summary:	Getting up and running with AMS-LaTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/info/amslatex/primer
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/amslatex-primer.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/amslatex-primer.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/amslatex-primer.r28980.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/amslatex-primer.doc.r28980.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -38,7 +32,7 @@ how to use amsrefs to create a bibliography.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
