@@ -5,8 +5,8 @@ Summary:	Getting up and running with AMS-LaTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/info/amslatex/primer
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/amslatex-primer.r28980.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/amslatex-primer.doc.r28980.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/amslatex-primer.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/amslatex-primer.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
