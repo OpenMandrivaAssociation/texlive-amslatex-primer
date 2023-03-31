@@ -1,6 +1,6 @@
 Name:		texlive-amslatex-primer
 Version:	28980
-Release:	1
+Release:	2
 Summary:	Getting up and running with AMS-LaTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/info/amslatex/primer
