@@ -3,7 +3,7 @@ Version:	28980
 Release:	2
 Summary:	Getting up and running with AMS-LaTeX
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/info/amslatex/primer
+URL:		https://www.ctan.org/tex-archive/info/amslatex/primer
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/amslatex-primer.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/amslatex-primer.doc.r%{version}.tar.xz
