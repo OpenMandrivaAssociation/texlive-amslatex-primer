@@ -1,41 +1,29 @@
-Name:		texlive-amslatex-primer
-Version:	28980
-Release:	2
+%global tl_name amslatex-primer
+%global tl_revision 79618
+
+Name:		texlive-%{tl_name}
+Epoch:		1
+Version:	2.3
+Release:	%{tl_revision}.1
 Summary:	Getting up and running with AMS-LaTeX
 Group:		Publishing
 URL:		https://www.ctan.org/tex-archive/info/amslatex/primer
-License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/amslatex-primer.r%{version}.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/amslatex-primer.doc.r%{version}.tar.xz
+License:	lppl1.3
+Source0:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/amslatex-primer.r%{tl_revision}.tar.xz
+Source1:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/amslatex-primer.doc.r%{tl_revision}.tar.xz
 BuildArch:	noarch
+BuildSystem:	texlive
 BuildRequires:	texlive-tlpkg
-Requires(pre):	texlive-tlpkg
+%texlive_base_requires
+Provides:	texlive(%{tl_name}) = %{tl_revision}
 
 %description
-The document aims to get you up and running with AMS-LaTeX as
-quickly as possible. These instructions (along with a template
-file template.tex) are not a substitute for the full
-documentation, but they may get you started quickly enough so
-that you will only need to refer to the main documentation
-occasionally. In addition to 'AMS-LaTeX out of the box', the
-document contains: - a section describing how to draw
-commutative diagrams using Xy-pic; and - a section describing
-how to use amsrefs to create a bibliography.
+The document aims to get you up and running with AMS-LaTeX as quickly as
+possible. These instructions (along with a template file template.tex)
+are not a substitute for the full documentation, but they may get you
+started quickly enough so that you will only need to refer to the main
+documentation occasionally. In addition to 'AMS-LaTeX out of the box',
+the document contains: a section describing how to draw commutative
+diagrams using Xy-pic; and a section describing how to use amsrefs to
+create a bibliography.
 
-#-----------------------------------------------------------------------
-%files
-%doc %{_texmfdistdir}/doc/latex/amslatex-primer/README
-%doc %{_texmfdistdir}/doc/latex/amslatex-primer/amshelp.md5
-%doc %{_texmfdistdir}/doc/latex/amslatex-primer/amshelp.pdf
-%doc %{_texmfdistdir}/doc/latex/amslatex-primer/amshelp.tex
-%doc %{_texmfdistdir}/doc/latex/amslatex-primer/template.tex
-
-#-----------------------------------------------------------------------
-%prep
-%autosetup -p1 -c -a1
-
-%build
-
-%install
-mkdir -p %{buildroot}%{_texmfdistdir}
-cp -fpar doc %{buildroot}%{_texmfdistdir}
